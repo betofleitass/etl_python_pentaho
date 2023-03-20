@@ -1,0 +1,17 @@
+version: "3"
+services:
+  postgres:
+    image: postgres
+    container_name: postgres
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres-volume:/var/lib/postgresql/data
+      - ./sources:/sources
+    environment:
+      - POSTGRES_USER=my_user
+      - POSTGRES_PASSWORD=my_password
+      - POSTGRES_DB=etl_python
+
+volumes:
+  postgres-volume:

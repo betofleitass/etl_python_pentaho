@@ -1,3 +1,8 @@
+# Local files
+notas.txt
+sources/split_sql
+sources/public_trades_full.sql
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
