@@ -2,6 +2,10 @@
 notas.txt
 sources/split_sql
 sources/public_trades_full.sql
+etldrawio.drawio
+.$etldrawio.drawio.bkp
+.$etldrawio.drawio.dtmp
+etldrawio.png
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
