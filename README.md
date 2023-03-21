@@ -5,15 +5,18 @@ Finally, it creates dimensions for quantity, flow and year and merges them with 
 The final output, a clean DataFrame of global commodity trade data, is the facts table, as it contains the measurable data about the trade transactions such as the quantity, value, and weight of the commodities traded, as well as the trade flow direction and the time period of the trade. 
 Finally the data is ready to be loaded into a data warehouse for further analysis.
 
-<a><img src="https://user-images.githubusercontent.com/95726794/212497770-a3e241e7-0c77-4573-9d22-8f0ae813e958.png" width="70%" height="70%"></a>
+<a><img src="https://user-images.githubusercontent.com/95726794/226501281-ca78a013-21bc-4f3e-89ce-147d13f00976.png" width="50%" height="70%"></a>
 <br></br>
-<a><img src="https://user-images.githubusercontent.com/95726794/212497784-80a48617-759c-4415-aa1c-4591b9892c3d.png" width="70%" height="70%"></a>
+<a><img src="https://user-images.githubusercontent.com/95726794/226502139-9c43ad64-a86b-4d4f-859c-4af6536e35dd.png" width="70%" height="70%"></a>
 
 ## Table of Contents:
-- [Requirements](#requirements)
+- [ETL with Python and Pentaho](#etl-with-python-and-pentaho)
+- [Table of Contents:](#table-of-contents)
+- [Requirements:](#requirements)
 - [Installation](#installation)
 - [Run it locally](#run-it-locally)
 - [Contributing](#contributing)
+- [Authors](#authors)
 - [License](#license)
 
 ## Requirements:
@@ -68,6 +71,18 @@ Python 3.10, Pentaho, Docker
 7. Run the script to create the tables  
 ` \i /sources/script_tables.sql` 
 
+8. Create a new database for pentaho
+` create database trades_pentaho;` 
+
+9. Change to the new database  
+` \c trades_pentaho` 
+
+10. Run the script to create the tables  
+` \i /sources/script_tables.sql` 
+
+11. To execute the ETL process, there are two options available.  
+The first option is to run the Notebook etl.ipynb, which contains the code and instructions on how to run the ETL process.  
+The second option is to import the Pentaho file and execute it.
 ## Contributing
 - Fork this repository;
 - Create a branch with your feature: `git checkout -b my-feature`;
@@ -80,9 +95,4 @@ Python 3.10, Pentaho, Docker
 ##  License
 This project is under [MIT License.](https://choosealicense.com/licenses/mit/)
 
-[Back to top ⬆️](#django-point-of-sale-pos-)
-
-
-
-# etl_python_pentaho
-
+[Back to top ⬆️](#etl_python_pentaho)
