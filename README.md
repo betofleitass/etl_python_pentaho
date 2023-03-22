@@ -10,8 +10,6 @@ Finally the data is ready to be loaded into a data warehouse for further analysi
 <a><img src="https://user-images.githubusercontent.com/95726794/226502139-9c43ad64-a86b-4d4f-859c-4af6536e35dd.png" width="70%" height="70%"></a>
 
 ## Table of Contents:
-- [ETL with Python and Pentaho](#etl-with-python-and-pentaho)
-- [Table of Contents:](#table-of-contents)
 - [Requirements:](#requirements)
 - [Installation](#installation)
 - [Run it locally](#run-it-locally)
@@ -46,7 +44,7 @@ Python 3.10, Pentaho, Docker
   4. Install dependencies:  
   ` pip install -r requirements.txt`
   
-  5. This project requires to have Docker
+  5. This project requires to have Docker:  
   [Get Docker](https://docs.docker.com/get-docker/)
   
 ## Run it locally
@@ -81,7 +79,7 @@ Python 3.10, Pentaho, Docker
 ` \i /sources/script_tables.sql` 
 
 11. To execute the ETL process, there are two options available.  
-The first option is to run the Notebook etl.ipynb, which contains the code and instructions on how to run the ETL process.  
+The first option is to run the Notebook [etl.ipynb](etl.ipynb), which contains the code and instructions on how to run the ETL process.  
 The second option is to import the Pentaho file and execute it.
 ## Contributing
 - Fork this repository;
